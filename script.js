@@ -92,7 +92,19 @@ function generateSyllabusSheetHTML(sem) {
 }
 
 function generateSyllabusCourseHTML(curso, link, pdf) {
-  return `
+  if (pdf === "")
+    return `
+        <div class="cursocontainter">
+          <a class="curso" target="_blank"
+            href="${link}">
+            <span>·</span><span class="nombrecurso">${curso}</span><img src="excel.png" alt="excel" height="24">
+          </a>
+          <a class="silabopdf" target="_blank"
+            href=""><img src="pdft.png" alt="silabo" height="26"></a>
+        </div>
+        `
+  else
+    return `
         <div class="cursocontainter">
           <a class="curso" target="_blank"
             href="${link}">
