@@ -100,7 +100,7 @@ function generateSyllabusCourseHTML(curso, link, pdf) {
             <span>·</span><span class="nombrecurso">${curso}</span><img src="excel.png" alt="excel" height="24">
           </a>
           <a class="silabopdf" target="_blank"
-            href=""><img src="pdft.png" alt="silabo" height="26"></a>
+            ><img src="pdft.png" alt="silabo" height="26"></a>
         </div>
         `
   else
