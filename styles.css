@@ -504,3 +504,28 @@
 .syllabus-head {
   font-size:0.40rem;
 }
+
+
+
+
+.examplecurri {
+  margin-bottom: 10pt; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between;
+}
+
+
+.btn-terciary{
+  border-color: #e84a4a;
+  background:#e84a4a14;
+  color: #e84a4a;
+}
+.btn-terciary:hover{ background:#e84a4a; color: var(--white);}
+
+.btn-secondary{
+  border-color: var(--blue-deep);
+  background:#17395a10;
+  color: var(--blue-deep);
+}
+.btn-secondary:hover{ background: var(--blue-deep); color: var(--white);}
