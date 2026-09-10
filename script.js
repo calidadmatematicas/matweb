@@ -30,7 +30,7 @@ export async function loadCSVData() {
             csvData.semestres.push(values[0]);
             csvData.ciclos.push(values[1]);
             csvData.cursos.push(values[2]);
-            csvData.docentes.push(values[3]);
+            csvData.docentes.push(values[3].normalize());
             csvData.links.push(values[4]);
             csvData.pdfs.push(values[5]);
         }
