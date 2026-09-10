@@ -53,6 +53,8 @@ export function openSyllabusPage() {
     const params = new URLSearchParams({
         docente: docente,
     });
+
+    console.log(docente);
     
     if (docente === "") {
         // do nothing
