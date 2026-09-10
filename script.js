@@ -46,7 +46,7 @@ export async function loadCSVData() {
 export function openSyllabusPage() {
   try {
     // docente
-    let docente = document.getElementById("username").value;
+    let docente = document.getElementById("username").value.normalize();
     docente = docente.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     docente = docente.trim().toUpperCase();
 
