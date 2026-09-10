@@ -47,8 +47,12 @@ export function openSyllabusPage() {
   try {
     // docente
     let docente = document.getElementById("username").value.normalize();
-    docente = docente.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
     docente = docente.trim().toUpperCase();
+    docente = docente.normalize("NFD").replace("Á", "A");
+    docente = docente.normalize("NFD").replace("É", "E");
+    docente = docente.normalize("NFD").replace("Í", "I");
+    docente = docente.normalize("NFD").replace("Ó", "O");
+    docente = docente.normalize("NFD").replace("Ú", "U");
 
     const params = new URLSearchParams({
         docente: docente,
