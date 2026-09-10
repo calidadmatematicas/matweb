@@ -31,6 +31,7 @@ export async function loadCSVData() {
             csvData.ciclos.push(values[1]);
             csvData.cursos.push(values[2]);
             csvData.docentes.push(values[3]);
+            console.log(values[3]);
             csvData.links.push(values[4]);
             csvData.pdfs.push(values[5]);
         }
